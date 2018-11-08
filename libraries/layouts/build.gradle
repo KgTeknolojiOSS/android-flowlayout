@@ -2,10 +2,6 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.kgteknoloji'
 
-repositories {
-    mavenCentral()
-}
-
 
 android {
     compileSdkVersion 27
@@ -15,7 +11,17 @@ android {
         minSdkVersion 14
         targetSdkVersion 27
         versionCode 1
-        versionName '2.0.0'
+        versionName "2.0.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
     lintOptions {
         abortOnError false
