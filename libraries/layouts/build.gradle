@@ -13,8 +13,9 @@ android {
 
     defaultConfig {
         minSdkVersion 14
-        versionName '2.0.0'
+        targetSdkVersion 27
         versionCode 1
+        versionName '2.0.0'
     }
     lintOptions {
         abortOnError false
