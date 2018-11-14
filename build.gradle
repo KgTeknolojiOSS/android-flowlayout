@@ -16,5 +16,4 @@ allprojects {
     google()
     jcenter()
   }
-
 }
