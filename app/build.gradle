@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-  compileSdkVersion 27
+  compileSdkVersion 26
   buildToolsVersion '28.0.3'
 
   defaultConfig {
       minSdkVersion 14
-      targetSdkVersion 27
+      targetSdkVersion 26
       versionCode 1
       versionName "2.0.0"
   }
@@ -23,7 +23,7 @@ android {
 
 dependencies {
     implementation project(':libraries:layouts')
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:26.0.1'
 
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.mockito:mockito-core:1.8.5'
